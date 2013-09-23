@@ -64,7 +64,7 @@ import Control.Monad.Trans.Class
 -- Instead, look at the caveats associated with user-defined implementations
 -- of 'fromField'.
 
-class FromRow a@N where
+class FromRow a where
     fromRow :: RowParser a
 
 getvalue :: PQ.Result -> PQ.Row -> PQ.Column -> Maybe ByteString
